@@ -5,8 +5,7 @@ contract ForceEther{
 
     receive() external payable{}
 
-    function forceTransfer(address payable _contract) external payable{ 
-        // Run delegate call which will fallback instead of received
+    function forceTransfer(address payable _contract) external{ 
         selfdestruct(_contract);
     }
     function withdraw() external payable{
