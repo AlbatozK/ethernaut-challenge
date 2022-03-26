@@ -17,7 +17,7 @@ so if we trade max amount we can deplete all token
 
 // Check Balance for contract
 (await contract.balanceOf(t1, contract.address)).toString();
-(await contract.balanceOf(t1, contract.address)).toString();
+(await contract.balanceOf(t2, contract.address)).toString();
 
 // Script to swap max t1->t2
 await contract.swap(t1, t2, (await contract.balanceOf(t1, player)));
